@@ -4,8 +4,8 @@ from email.MIMEText import MIMEText
 from email.MIMEBase import MIMEBase
 from email import encoders
 
-fromaddr = 'attsaini@gmail.com'
-toaddr = 'rochak.saini.15cse@bml.edu.in'
+fromaddr = 'xxxxxxxxxxxxxxxxxx'
+toaddr = 'xxxxxxxxxxxxxxxxxx'
 msg = MIMEMultipart()
 msg['From'] = fromaddr
 msg['To'] = toaddr
@@ -23,7 +23,7 @@ part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
 msg.attach(part)
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login('attsaini@gmail.com', 'fuckubitch.')
+server.login('xxxxxxxxxxxxxxxxxxx', '**********')
 text = msg.as_string()
 server.sendmail(fromaddr, toaddr, text)
 server.quit()
